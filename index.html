@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Book Library</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>My Book Library</h1>
+        <input type="text" id="search" placeholder="Search books...">
+    </header>
+    <div class="container">
+        <nav>
+            <ul id="navbar">
+                <li data-category="all" class="active">All</li>
+                <li data-category="Fiction">Fiction</li>
+                <li data-category="Non-Fiction">Non-Fiction</li>
+                <li data-category="Science">Science</li>
+                <li data-category="Technology">Technology</li>
+                <li data-category="Business">Business</li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Books</h2>
+                <div id="books"></div>
+            </section>
+            <section>
+                <h2>Borrowing History</h2>
+                <ul id="history"></ul>
+            </section>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,147 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #673AB7;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+header input {
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 60%;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+header input:focus {
+    transform: scale(1.05);
+}
+
+/* Sidebar Styling */
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    background-color: #673AB7;
+    color: white;
+    width: 200px;
+    height: calc(100vh - 120px); /* Full height minus header height */
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #ffffff;
+    color: #673AB7;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid transparent;
+}
+
+#navbar li.active, #navbar li:hover {
+    background-color: #5A2DA0;
+    color: #ffffff;
+    border-color: #5A2DA0;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.book-card {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.book-card img {
+    display: block;
+    width: 100%; /* Takes the full width of the card */
+    height: auto; /* Maintains the aspect ratio */
+    max-height: 250px; /* Ensures the height doesn't exceed the card dimensions */
+    background-color: #f9f9f9; /* Default background */
+    border-bottom: 2px solid #ddd; /* A clean border under the image */
+}
+
+
+
+.book-card .content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.book-card h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.book-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.book-card button {
+    padding: 0.5rem 1.5rem;
+    background-color: #673AB7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-card button:hover {
+    background-color: #5a2da0;
+}
